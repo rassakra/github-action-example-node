@@ -15,4 +15,4 @@ jobs:
 
       - run: |
           docker build . -t index.docker.io/${{ secrets.DOCKER_REPO }}:${{ github.sha }}
-          docker push index.docker.io/${{ secrets.DOCKER_REPO }}:${{ githu
+          docker push index.docker.io/${{ secrets.DOCKER_REPO }}:${{ github.sha }}
